@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,800;0,900;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url("images/Jazz_Microphone.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    position: relative;
+    background: #4A4949;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    padding: 30x 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-circle-start a {
+    color:#1ffa02;
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.play-circle-middle a {
+    color: #6f6e6e;
+    font-size: 30px;
+    position: absolute;
+    left: 35px;
+    top: 10px;
+}
+
+.play-circle-end a {
+    color: #1ffa02;
+    font-size: 30px;
+    position: absolute;
+    left: 60px;
+    top: 10px;
+}
+
+header .nav a {
+    color: #D8CACA;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2px 8px;
+    border-radius: 8px;
+    margin-right: 30px;
+    display: flex-inline;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+header .nav a:hover {
+    background: #D8CACA;
+    color: #4A4949;
+}
+
+.content {
+    max-width: 650px;
+    margin: 60px 100px;
+}
+
+.content .info h2 {
+    color: #4A4949;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+.content .info h2 span {
+    color:#1ffa02;
+    font-size: 80px;
+}
+
+.content .info p {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 80%;
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 40px;
+}
+
+.content .info p span {
+    text-transform: uppercase;
+}
+
+.content .start-btn {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4A4949;
+    background: #1ffa02;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.content .start-btn:hover {
+    box-shadow: 5px 5px 5px #6f6e6e;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding: 10px 10px;
+}
+
+.media-icons a {
+    position: relative;
+    color:#4A4949;
+    font-size: 35px;
+    transition: 0.3s;
+    transition-property: transform;
+}
+
+
+.media-icons a:hover {
+    transform: scale(1.5);
+}
+
+.media-icons a:not(:last-child) {
+    margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+
+    .header .nav{
+        justify-content: flex-end;
+    }
+    
+    .content {
+        margin: 60px 20px;
+    }
+    .content .info h2 span {
+        font-size: 60px;
+    }
+
+    .content .info h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .content .info p {
+        font-size: 14px;
+        width: 55%;
+    }
+
+    .play-circle-start a {
+        font-size: 100%;
+        margin: 10px 10px;
+    }
+
+    .play-circle-middle a {
+        font-size: 100%;
+        margin: 10px -1px;
+    }
+
+    .play-circle-end a {
+        font-size: 100%;
+        margin: 10px -12px;
+    }
+
+    header .nav a {
+        font-size: 60%;
+    }
+    header .sign-in-btn a {
+        font-size: 45%;
+        margin-right: 10px;
+    }
+}
+
