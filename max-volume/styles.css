@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@300;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+body {
+    background-image: url("images/Max_Volume.jpg");
+    background-color: #F3B900;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.nav-text {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px;
+}
+.fa-house {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.fa-headphones {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.fa-download {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 5px;
+}
