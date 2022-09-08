@@ -18,14 +18,16 @@ body {
     background-position: center;
 }
 
-.nav-bar {
-    position: relative;
+.container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 10px;
+    flex-direction: row;
+}
+
+.nav-bar {
+    width: 30%;
+    height: 100vh;
+    margin: 20px;
     padding: 10px;
-    width: 40%;
     background-color: #000000;
 }
 
@@ -34,32 +36,68 @@ body {
 }
 
 .nav-link {
-    padding: 20px;
+    margin-bottom: 50px;
+    padding: 40px 40px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
 }
 
 .nav-text {
     color: #ffffff;
+    padding: 12px;
     font-size: 1rem;
-    padding: 10px;
-    text-align: start;
-
-    background-color: #F3B900;
 }
 
 .fa-house {
     color: #ffffff;
     font-size: 2rem;
-    padding: 5px;
+    padding: 0px 20px 30px 0;
 }
 
 .fa-headphones {
     color: #ffffff;
     font-size: 2rem;
-    padding: 5px;
+    padding: 20px 20px 30px 0;
 }
 
 .fa-download {
     color: #ffffff;
     font-size: 2rem;
-    padding: 5px;
+    padding: 20px 20px 0px 0;
+}
+
+.play-button {
+    color: #FA00FF;
+    background-color: #ffffff;
+    padding: 50px;
+    font-size: 3rem;
+    border-radius: 50%;
+    border: 8px solid #FA00FF;
+}
+.content-text {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+.side-bar {
+    width: 100%;
+    height: 100vh;
+    margin: 20px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.fa-magnifying-glass {
+    color: #FA00FF;
+}
+
+.sound-bar {
+    background-color: #FA00FF;
+    width: 30px;
+    height: 200px;
+    border-radius: 30px 30px 0 0;
 }
