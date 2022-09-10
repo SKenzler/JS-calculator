@@ -24,7 +24,7 @@ body {
 }
 
 .nav-bar {
-    width: 50%;
+    width: 30%;
     height: 100vh;
     margin: 20px;
     padding: 10px;
@@ -41,11 +41,11 @@ body {
     align-content: center;
     justify-content: center;
     text-align: start;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
     width: 180px;
     border-radius: 8px;
-    transition: background-color;
+    transition: background-color 0.3s ease;
 }
 
 .nav-link:hover {
@@ -54,15 +54,13 @@ body {
 
 .nav-text {
     color: #ffffff;
-    padding: 12px;
+    padding-left: 12px;
     font-size: 1rem;
-    align-content: center;
 }
 
 .fa-house {
     color: #ffffff;
     font-size: 2rem;
-   
     padding: 10px 20px 10px 10px;
 }
 
@@ -78,6 +76,46 @@ body {
     padding: 10px 20px 10px 10px;
 }
 
+.hero_content {
+    display: flex;
+    align-content: center;
+    align-content: center;
+    justify-content: center;
+    max-width: 60%;
+    background-color: antiquewhite;
+}
+
+.hero_header {
+    width: 10%;
+    display: flex;
+    align-content: center;
+    position: absolute;
+    left: 25%;
+    height: 100vh;
+    margin: 10px;
+    padding: 10px;
+    background-color: #FA00FF;
+
+}
+
+.vetical-text {
+    color: #ffffff;
+    font-size: 7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    transform: rotate(270deg);
+}
+
+.horizontal-text {
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .play-button {
     color: #FA00FF;
     background-color: #ffffff;
@@ -86,17 +124,18 @@ body {
     text-align: center;
     border-radius: 50%;
     border: 8px solid #FA00FF;
+    transition: background-color 0.3s ease;
     cursor: pointer;
-    transition: background-color;
 }
 .play-button:hover {
-    background-color: #eed00c;
+    background-color: #FED220;
 }
 
 .content-text {
     color: #ffffff;
     font-weight: 300;
     font-size: 1rem;
+    margin-top: 20px;
     padding: 20px;
 }
 
@@ -108,18 +147,44 @@ body {
     background-color: aqua;
 }
 
-.fa-magnifying-glass {
-    color: #FA00FF;
+.search-bar {
+    display: flex;
+    align-content: end;
+    justify-content: end;
 }
 
+.search {
+    padding: 4px;
+    border: 0;
+    border-radius: 4px;
+}
+
+.btn-search {
+    padding: 5px;
+    background-color: #FA00FF;
+    border: 0;
+    border-radius: 4px;  
+}
+
+.fa-magnifying-glass {
+    color: #ffffff;
+    padding: 5px 5px 5px 5px;
+}
+
+.music-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 50px;
+    padding: 5px;
+    background-color: #F3B900;
+}
 .sound-bar {
     background-color: #FA00FF;
     width: 30px;
     height: 200px;
     border-radius: 30px 30px 0 0;
-}
-
-.btn-search {
-    padding 20px;
-    background-color: #F3B900;
 }
