@@ -24,7 +24,7 @@ body {
 }
 
 .nav-bar {
-    width: 30%;
+    width: 50%;
     height: 100vh;
     margin: 20px;
     padding: 10px;
@@ -36,46 +36,63 @@ body {
 }
 
 .nav-link {
-    margin-bottom: 50px;
-    padding: 40px 40px 40px 20px;
     display: flex;
     flex-direction: column;
-    text-align: start;
+    align-content: center;
     justify-content: center;
+    text-align: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 180px;
+    border-radius: 8px;
+    transition: background-color;
+}
+
+.nav-link:hover {
+   background-color:  #FA00FF;
 }
 
 .nav-text {
     color: #ffffff;
     padding: 12px;
     font-size: 1rem;
+    align-content: center;
 }
 
 .fa-house {
     color: #ffffff;
     font-size: 2rem;
-    padding: 0px 20px 30px 0;
+   
+    padding: 10px 20px 10px 10px;
 }
 
 .fa-headphones {
     color: #ffffff;
     font-size: 2rem;
-    padding: 20px 20px 30px 0;
+    padding: 10px 20px 10px 10px;
 }
 
 .fa-download {
     color: #ffffff;
     font-size: 2rem;
-    padding: 20px 20px 0px 0;
+    padding: 10px 20px 10px 10px;
 }
 
 .play-button {
     color: #FA00FF;
     background-color: #ffffff;
-    padding: 50px;
+    padding: 20px 40px 20px 50px;
     font-size: 3rem;
+    text-align: center;
     border-radius: 50%;
     border: 8px solid #FA00FF;
+    cursor: pointer;
+    transition: background-color;
 }
+.play-button:hover {
+    background-color: #eed00c;
+}
+
 .content-text {
     color: #ffffff;
     font-weight: 300;
@@ -84,7 +101,7 @@ body {
 }
 
 .side-bar {
-    width: 100%;
+    width: 50%;
     height: 100vh;
     margin: 20px;
     padding: 10px;
@@ -100,4 +117,9 @@ body {
     width: 30px;
     height: 200px;
     border-radius: 30px 30px 0 0;
+}
+
+.btn-search {
+    padding 20px;
+    background-color: #F3B900;
 }
