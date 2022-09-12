@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@300;500;700;900&display=swap');
 
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --primary-color: #FFF;
+    --secondary-color: #F3B900;
+    --accent-color: #FA00FF;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;  
+    font-family: var(--primary-font);  
 }
 
 body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: #F3B900;
+    background-color: var(--secondary-color);
     background-image: url("images/Max_Volume.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,12 +26,13 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: minmax(10px, 1fr) 3fr;
 }
 
 .nav-bar {
-    width: 30%;
+    grid-column-start: 1;
+    grid-column-end: 2;
     height: 100vh;
     margin: 20px;
     padding: 10px;
@@ -42,117 +50,130 @@ body {
     text-align: start;
     margin-top: 0;
     margin-bottom: 20px;
-    width: 160px;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-   background-color:  #FA00FF;
+   transform: scale(1.1);
 }
 
 .nav-text {
-    color: #ffffff;
+    color: var(--primary-color);
     padding-left: 12px;
     font-size: 0.8rem;
     max-width: 30%;
 }
 
 .fa-house {
-    color: #ffffff;
+    color: var(--primary-color);
     font-size: 1.8rem;
     padding: 10px 20px 10px 10px;
 }
 
 .fa-headphones {
-    color: #ffffff;
+    color: var(--primary-color);
     font-size: 1.8rem;
     padding: 10px 20px 10px 10px;
 }
 
 .fa-download {
-    color: #ffffff;
+    color: var(--primary-color);
     font-size: 1.8rem;
     padding: 10px 20px 10px 10px;
 }
 
 .hero_content {
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: start;
-    max-width: 30%;
+    max-width: 70%;
     margin-top: 30px;
 }
 
-.fa-facebook {
-    color: #000000;
-    font-size: 1.8rem;
-    padding: 10px 20px 10px 10px;
-}
-
-.fa-square-instagram {
-    color: #000000;
-    font-size: 1.8rem;
-    padding: 10px 20px 10px 10px;
-}
-
-.hero_header {
-    display: flex;
-    justify-content: start;
-    align-content: start;
-    text-align: start;
-    background-color: #FA00FF;
-}
-
-.vetical-text {
-    color: #ffffff;
-    font-size: 8rem;
-    font-weight: 900;
-    text-align: center;
-    transform: rotate(270deg);
-}
-
-.horizontal-text {
-    color: #ffffff;
-    font-size: 4rem;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 .play-button {
-    color: #FA00FF;
-    background-color: #ffffff;
+    color: var(--accent-color);
+    background-color: var(--primary-color);
     padding: 15px 40px 15px 50px;
     font-size: 4rem;
     text-align: center;
     border-radius: 50%;
-    border: 7px solid #FA00FF;
-    transition: background-color 0.3s ease;
+    border: 7px solid var(--accent-color);
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 .play-button:hover {
-    background-color: #FED220;
+    transform: scale(1.1);
 }
 
 .btn-text {
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
-    color: #FA00FF;
+    color: var(--accent-color);
     font-size: 1rem;
+    padding-top: 15px;
     text-align: center;
 }
 
 .content-text {
-    color: #ffffff;
+    color: var(--primary-color);
     font-weight: 300;
     font-size: 1rem;
     margin-top: 20px;
     padding: 20px;
 }
 
+.fa-facebook {
+    color: #000;
+    font-size: 1.8rem;
+    padding: 10px 20px 10px 10px;
+}
+
+.fa-square-instagram {
+    color: #000;
+    font-size: 1.8rem;
+    padding: 10px 20px 10px 10px;
+}
+
+.hero_header {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 100vh;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--accent-color);
+}
+
+.vetical-text {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: var(--primary-color);
+    font-size: 8rem;
+    font-weight: 900;
+    margin: 50px 0;
+    padding: 20px;
+    transform: rotate(270deg);
+    background-color: #000;
+}
+
+.horizontal-text {
+    display: flex;
+    color: var(--primary-color);
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
 .side-bar {
-    width: 50%;
+    grid-column-start: 3;
+    grid-column-end: 4;
     height: 100vh;
     margin: 20px;
     padding: 10px;
@@ -173,7 +194,7 @@ body {
 }
 
 .search::placeholder {
-    padding-left:2px;
+    padding-left: 2px;
     color: #6f6868;
 }
 
@@ -182,13 +203,13 @@ body {
 }
 .btn-search {
     padding: 5px;
-    background-color: #FA00FF;
+    background-color: var(--accent-color);
     border: 0;
     border-radius: 4px;  
 }
 
 .fa-magnifying-glass {
-    color: #ffffff;
+    color: var(--primary-color);
     padding: 5px 5px 5px 5px;
 }
 
@@ -201,10 +222,10 @@ body {
     right: 0;
     margin: 50px;
     padding: 5px;
-    background-color: #F3B900;
+    background-color: var(--secondary-color);
 }
 .sound-bar {
-    background-color: #FA00FF;
+    background-color: var(--accent-color);
     width: 30px;
     height: 200px;
     border-radius: 30px 30px 0 0;
