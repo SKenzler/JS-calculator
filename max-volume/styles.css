@@ -15,7 +15,6 @@
 }
 
 body {
-    position: relative;
     width: 100%;
     min-height: 100vh;
     background-color: var(--secondary-color);
@@ -27,15 +26,15 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: minmax(10px, 1fr) 3fr;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .nav-bar {
-    grid-column-start: 1;
-    grid-column-end: 2;
     height: 100vh;
     margin: 20px;
     padding: 10px;
+    background-color: #6f6868;
 }
 
 .nav-bar a {
@@ -43,20 +42,10 @@ body {
 }
 
 .nav-link {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
     text-align: start;
     margin-top: 0;
     margin-bottom: 20px;
     border-radius: 8px;
-    transition: transform 0.3s ease;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-   transform: scale(1.1);
 }
 
 .nav-text {
@@ -70,26 +59,36 @@ body {
     color: var(--primary-color);
     font-size: 1.8rem;
     padding: 10px 20px 10px 10px;
+    transition: transform 0.3s ease;
 }
+
+.fa-house:hover {
+    transform: scale(1.1);
+ }
 
 .fa-headphones {
     color: var(--primary-color);
     font-size: 1.8rem;
     padding: 10px 20px 10px 10px;
+    transition: transform 0.3s ease;
 }
+
+.fa-headphones:hover {
+    transform: scale(1.1);
+ }
 
 .fa-download {
     color: var(--primary-color);
     font-size: 1.8rem;
     padding: 10px 20px 10px 10px;
+    transition: transform 0.3s ease;
 }
 
+.fa-download:hover {
+    transform: scale(1.1);
+ }
+
 .hero_content {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: start;
-    max-width: 70%;
     margin-top: 30px;
 }
 
@@ -97,7 +96,7 @@ body {
     color: var(--accent-color);
     background-color: var(--primary-color);
     padding: 15px 40px 15px 50px;
-    font-size: 4rem;
+    font-size: 3.2rem;
     text-align: center;
     border-radius: 50%;
     border: 7px solid var(--accent-color);
@@ -110,8 +109,6 @@ body {
 }
 
 .btn-text {
-    display: flex;
-    justify-content: center;
     text-transform: uppercase;
     color: var(--accent-color);
     font-size: 1rem;
@@ -122,58 +119,64 @@ body {
 .content-text {
     color: var(--primary-color);
     font-weight: 300;
-    font-size: 1rem;
-    margin-top: 20px;
-    padding: 20px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    padding: 10px;
 }
 
 .fa-facebook {
     color: #000;
     font-size: 1.8rem;
     padding: 10px 20px 10px 10px;
+    transition: transform 0.3s ease;
+}
+
+.fa-facebook:hover {
+    transform: scale(1.1);
 }
 
 .fa-square-instagram {
     color: #000;
     font-size: 1.8rem;
     padding: 10px 20px 10px 10px;
+    transition: transform 0.3s ease;
+}
+
+.fa-square-instagram:hover {
+    transform: scale(1.1);
 }
 
 .hero_header {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    align-content: end;
+    justify-content: end;
+    text-align: end;
     height: 100vh;
-    margin: 20px;
-    padding: 10px;
+    
     background-color: var(--accent-color);
 }
 
 .vetical-text {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
     color: var(--primary-color);
     font-size: 8rem;
     font-weight: 900;
-    margin: 50px 0;
-    padding: 20px;
     transform: rotate(270deg);
     background-color: #000;
 }
 
 .horizontal-text {
-    display: flex;
     color: var(--primary-color);
     font-size: 4rem;
     font-weight: 500;
-    text-align: center;
-    padding: 10px;
     text-transform: uppercase;
 }
 
 .side-bar {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
     height: 100vh;
     margin: 20px;
     padding: 10px;
@@ -182,7 +185,6 @@ body {
 
 .search-bar {
     display: flex;
-    align-content: end;
     justify-content: end;
 }
 
@@ -215,13 +217,7 @@ body {
 
 .music-icon {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 50px;
-    padding: 5px;
+    justify-content: end;
     background-color: var(--secondary-color);
 }
 .sound-bar {
@@ -230,4 +226,12 @@ body {
     height: 200px;
     border-radius: 30px 30px 0 0;
     margin: 5px;
+}
+
+@media (min-width: 40em) {
+    .container {
+        display: grid;
+        grid-template-columns: 1ft;
+        
+    }
 }
