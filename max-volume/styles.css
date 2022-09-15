@@ -26,15 +26,14 @@ body {
 
 .container {
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 0.1rem;
+    grid-template-columns: 200px 1fr 3fr;
 }
 
 .nav-bar {
     height: 100vh;
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
-    background-color: #6f6868;
 }
 
 .nav-bar a {
@@ -52,7 +51,6 @@ body {
     color: var(--primary-color);
     padding-left: 12px;
     font-size: 0.8rem;
-    max-width: 30%;
 }
 
 .fa-house {
@@ -90,14 +88,14 @@ body {
 
 .hero_content {
     margin-top: 30px;
+    text-align: center;
 }
 
 .play-button {
     color: var(--accent-color);
     background-color: var(--primary-color);
-    padding: 15px 40px 15px 50px;
-    font-size: 3.2rem;
-    text-align: center;
+    padding: 10px 30px 10px 35px;
+    font-size: 3rem;
     border-radius: 50%;
     border: 7px solid var(--accent-color);
     transition: transform 0.3s ease;
@@ -111,22 +109,27 @@ body {
 .btn-text {
     text-transform: uppercase;
     color: var(--accent-color);
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-top: 15px;
-    text-align: center;
 }
 
 .content-text {
     color: var(--primary-color);
     font-weight: 300;
     font-size: 0.8rem;
+    text-align: start;
     margin-top: 10px;
     padding: 10px;
 }
 
+.media-icons {
+    margin-top: 10px;
+    text-align: start;
+}
+
 .fa-facebook {
     color: #000;
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 10px 20px 10px 10px;
     transition: transform 0.3s ease;
 }
@@ -137,23 +140,19 @@ body {
 
 .fa-square-instagram {
     color: #000;
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 10px 20px 10px 10px;
     transition: transform 0.3s ease;
 }
 
 .fa-square-instagram:hover {
     transform: scale(1.1);
-}
+} 
 
 .hero_header {
-    display: flex;
-    flex-direction: column;
-    align-content: end;
-    justify-content: end;
-    text-align: end;
+    margin: 20px;
+    padding: 10px;
     height: 100vh;
-    
     background-color: var(--accent-color);
 }
 
@@ -161,7 +160,9 @@ body {
     color: var(--primary-color);
     font-size: 8rem;
     font-weight: 900;
-    transform: rotate(270deg);
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    text-align: center;
     background-color: #000;
 }
 
@@ -169,6 +170,7 @@ body {
     color: var(--primary-color);
     font-size: 4rem;
     font-weight: 500;
+    text-align: center;
     text-transform: uppercase;
 }
 
