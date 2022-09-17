@@ -2,7 +2,7 @@
 
 :root {
     --primary-font: 'Poppins', sans-serif;
-    --primary-color: #FFF;
+    --primary-color: #10072C;
     --secondary-color: #F3B900;
     --accent-color: #FA00FF;
 }
@@ -33,10 +33,9 @@ body {
 .nav-bar {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: end;
     height: 100vh;
-    margin: 10px;
-    padding: 10px;
+    margin: 20px 0 20px 20px;   
 }
 
 .nav-bar a {
@@ -44,9 +43,7 @@ body {
 }
 
 .nav-link {
-    text-align: start;
-    margin-top: 0;
-    margin-bottom: 20px;
+    padding: 10px;
     border-radius: 8px;
 }
 
@@ -97,7 +94,7 @@ body {
 .play-button {
     color: var(--accent-color);
     background-color: var(--primary-color);
-    padding: 10px 30px 10px 35px;
+    padding: 5px 30px 10px 35px;
     font-size: 3rem;
     border-radius: 50%;
     border: 7px solid var(--accent-color);
@@ -118,7 +115,7 @@ body {
 
 .content-text {
     color: var(--primary-color);
-    font-weight: 300;
+    font-weight: 500;
     font-size: 0.8rem;
     text-align: start;
     margin-top: 10px;
@@ -133,7 +130,7 @@ body {
 }
 
 .fa-facebook {
-    color: #000;
+    color: var(--accent-color);
     font-size: 2rem;
     padding: 10px 20px 10px 10px;
     transition: transform 0.3s ease-out;
@@ -144,7 +141,7 @@ body {
 }
 
 .fa-square-instagram {
-    color: #000;
+    color: var(--accent-color);
     font-size: 2rem;
     padding: 10px 20px 10px 10px;
     transition: transform 0.3s ease-out;
@@ -193,6 +190,7 @@ body {
 .search-bar {
     display: flex;
     justify-content: end;
+    max-height: 30px;
 }
 
 .search {
@@ -260,4 +258,65 @@ body {
     height: 120px;
     border-radius: 30px 30px 0 0;
     margin: 5px;
+}
+
+@media (max-width: 40em) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3 1fr);
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        height: auto;
+    }
+
+    .nav-icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero_header {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .vetical-text {
+        font-size: 6rem;
+        writing-mode: horizontal-tb;
+        transform: rotate(360deg);
+        text-align: center;
+    }
+
+    .horizontal-text {
+        text-align: center;
+        text-transform: uppercase;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+
+    .content-text {
+        margin: 0 20px 0 20px;
+    }
+
+    .side-bar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    } 
+
+    .music-icon {
+        display: flex;
+        justify-content: start;
+        margin: 40px 0 40px 0;
+
+    }
+
 }
