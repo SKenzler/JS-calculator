@@ -3,7 +3,7 @@
 .hero-image {
     background-image: url("images/Design_Select.jpg");
     background-color: #000000;
-    height: 100vh;
+    max-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
