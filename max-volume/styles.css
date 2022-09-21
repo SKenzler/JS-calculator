@@ -2,7 +2,7 @@
 
 :root {
     --primary-font: 'Poppins', sans-serif;
-    --primary-color: #10072C;
+    --primary-color: #ff0062;
     --secondary-color: #F3B900;
     --accent-color: #FA00FF;
 }
@@ -92,12 +92,12 @@ body {
 }
 
 .play-button {
-    color: var(--accent-color);
-    background-color: var(--primary-color);
-    padding: 5px 30px 10px 35px;
+    color: var(--primary-color);
+    background-color: #FFFFFF;
+    padding: 10px 30px 10px 35px;
     font-size: 3rem;
     border-radius: 50%;
-    border: 7px solid var(--accent-color);
+    border: 7px solid var(--primary-color);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -108,13 +108,13 @@ body {
 
 .btn-text {
     text-transform: uppercase;
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-size: 0.8rem;
     padding-top: 15px;
 }
 
 .content-text {
-    color: var(--primary-color);
+    color: #000000;
     font-weight: 500;
     font-size: 0.8rem;
     text-align: start;
@@ -130,7 +130,7 @@ body {
 }
 
 .fa-facebook {
-    color: var(--accent-color);
+    color: #000000;
     font-size: 2rem;
     padding: 10px 20px 10px 10px;
     transition: transform 0.3s ease-out;
@@ -141,7 +141,7 @@ body {
 }
 
 .fa-square-instagram {
-    color: var(--accent-color);
+    color: #000000;
     font-size: 2rem;
     padding: 10px 20px 10px 10px;
     transition: transform 0.3s ease-out;
@@ -217,7 +217,7 @@ body {
 }
 
 .fa-magnifying-glass {
-    color: var(--primary-color);
+    color: #FFFFFF;
     padding: 5px 5px 5px 5px;
 }
 
@@ -269,9 +269,9 @@ body {
     .nav-bar {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
+        align-items: start;
+        justify-content: start;
+        margin: 10px;
         height: auto;
     }
 
@@ -303,7 +303,7 @@ body {
     }
 
     .content-text {
-        margin: 0 20px 0 20px;
+        display: none;
     }
 
     .side-bar {
