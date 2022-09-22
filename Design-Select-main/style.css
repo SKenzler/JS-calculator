@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@300;500;700;900&display=swap');
 
-.hero-image {
+body {
     background-image: url("images/Design_Select.jpg");
     background-color: #000000;
     min-height: 100vh;
