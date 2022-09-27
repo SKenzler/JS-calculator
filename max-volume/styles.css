@@ -278,6 +278,21 @@ body {
         flex-direction: row;
     }
 
+    .content-text {
+        color: #FFFFFF;
+        background-color: var(--primary-color);
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .fa-facebook {
+        color: #FFFFFF;
+    }
+
+    .fa-square-instagram {
+        color: #FFFFFF;
+    }
+
     .hero-section {
         display: flex;
         flex-direction: row;
