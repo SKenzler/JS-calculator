@@ -60,7 +60,7 @@ body {
 }
 
 
-.operator-equals {
+.btn-equals {
     background-color: var(--accent-color);
     grid-column: 4;
     grid-row: 2 / span 4;
