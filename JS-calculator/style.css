@@ -3,8 +3,9 @@
 :root {
     --primary-font: 'Roboto', sans-serif;
     --primary-color: #444444;
-    --secondary-color: #F3B900;
+    --secondary-color: #9e9c9c;
     --accent-color: #FA00FF;
+    --background-color: #F3B900;
 }
 
 * {
@@ -19,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #F3B900;
+    background-color: var(--background-color);
 }
 
 .calculator {
@@ -37,11 +38,10 @@ body {
 }
 
 .calculator-btns {
-    background-color: #9a9a9a;
+    background-color: var(--background-color);
     display: grid;
     grid-gap: 2px;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: 1 / 5;
 }
 
 .calculator-btns > button {
@@ -60,5 +60,9 @@ body {
 
 .btn-clear {
     text-transform: uppercase;
+}
+
+.operator-plus, .operator-minus, .operator-multiply, .operator-divide {
+    background-color: var(--secondary-color);
 }
 
