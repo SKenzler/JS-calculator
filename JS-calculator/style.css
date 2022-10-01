@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root {
-    --primary-font: font-family: 'Roboto', sans-serif;
+    --primary-font: 'Roboto', sans-serif;
     --primary-color: #444444;
     --secondary-color: #F3B900;
     --accent-color: #FA00FF;
@@ -53,6 +53,8 @@ body {
 
 .operator-equals {
     background-color: var(--accent-color);
+    grid-column: 4;
+    grid-row: 2 / span 4;
     
 }
 
