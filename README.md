@@ -4,7 +4,7 @@
 
 ## About The Project
 
-A simple calculator build using JavaScript
+A simple calculator built using JavaScript
 
 ## Built With
 
@@ -23,5 +23,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Acknowledgments
 
 * [Github](https://github.com)
-* [Figma](https://www.figma.com)
 * [VS Code](https://code.visualstudio.com)
